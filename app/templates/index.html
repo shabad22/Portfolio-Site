@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="text-gray-400 body-font bg-black-900">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">My Projects</h1>
+          <div class="h-1 w-20 bg-blue-500 rounded"></div>
+        </div>
+        <p class="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">Here are my projects I have worked on. Most of them are made using React JS and coded in Javascript and are based on real-life problems.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="{{url_for('static', filename='img/covid.jpg')}}" alt="content">
+            <h3 class="tracking-widest text-blue-400 text-xs font-medium title-font">Status of Covid-19 presented in a visual format</h3>
+            <h2 class="text-lg text-white font-medium title-font mb-4"><a href="https://covid-19-tracker-95dd2.web.app/">Covid-19 Tracker</a></h2>
+            <p class="leading-relaxed text-base">With the data being updated every 10 minutes, this tracker conatins charts and maps for good UI</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="{{url_for('static', filename='img/codebox.jpg')}}" alt="content">
+            <h3 class="tracking-widest text-blue-400 text-xs font-medium title-font">An online and free editor to create websites</h3>
+            <h2 class="text-lg text-white font-medium title-font mb-4"><a href="https://codebox-75594.web.app/">CodeBox</a></h2>
+            <p class="leading-relaxed text-base">This website is an online editor for HTML, CSS and JS which is a simple clone of Codepen.io</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="{{url_for('static', filename='img/superMaps.jpg')}}" alt="content">
+            <h3 class="tracking-widest text-blue-400 text-xs font-medium title-font">A map to map out your vacations</h3>
+            <h2 class="text-lg text-white font-medium title-font mb-4"><a href="https://supermaps-99578.web.app/">SuperMaps</a></h2>
+            <p class="leading-relaxed text-base">A simple yet effective clone of Google Maps to help you reach faster and quicker to your destination</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="{{url_for('static', filename='img/newsboy.jpg')}}" alt="content">
+            <h3 class="tracking-widest text-blue-400 text-xs font-medium title-font">Voice Controlled new website powered by AI</h3>
+            <h2 class="text-lg text-white font-medium title-font mb-4"><a href="https://pedantic-gates-b9620a.netlify.app/">NewsBoy</a></h2>
+            <p class="leading-relaxed text-base">Control and read your favorite news from your favorite newspaper with just your voice</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock content %}
